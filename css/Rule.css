@@ -1,24 +1,9 @@
-h2 {
-    border-bottom: 1px solid #000;
-    font-size: 2.5rem;
-    font-weight: 400;
-    font-style: normal;
-    height: 70px;
-    font-family: "Dela Gothic One", sans-serif;
-    padding-right: 10vw;
-    padding-left: 2vw;
-    width: max-content;
-    margin-left: 20px;
-}
 #rule {
     font-family: "Kiwi Maru", serif;
 }
 #rule p {
     font-family: "Kiwi Maru", serif;
 
-}
-h3 {
-    font-size: 1.7rem;
 }
 .daiji {
     color: red;
