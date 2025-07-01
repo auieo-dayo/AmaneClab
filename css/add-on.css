@@ -1,0 +1,47 @@
+#addons {
+    width: 99%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.addon {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.addon .name {
+    padding-right: 10px;
+    border-right: 2px dashed #000;
+    margin-right: 5px;
+}
+.addon .name a {
+    color: rgb(43, 187, 187);
+    text-decoration: none;
+    transition: .3s;
+}
+.addon .name a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.addon .flex {
+    display: flex;
+}
+@media (max-width: 768px) {
+#addons {
+    width: 80%;
+}
+.in_addon { 
+    font-size: 1.3rem;   
+}
+.addon .name {
+    padding-right: 10px;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    margin-right: 5px;
+}
+.addon .flex {
+    display: block;
+}
+}

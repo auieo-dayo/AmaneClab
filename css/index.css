@@ -2,3 +2,15 @@
     color: red;
     font-size: 1.5rem;
 }
+#news {
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+#news h2 {
+    font-size: 1.3rem;
+}
+.news_text {
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
