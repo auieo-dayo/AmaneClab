@@ -19,7 +19,9 @@ color[1]++
 setTimeout(()=>{
     document.getElementById("title").textContent = "あまネギ"
     alert("おや？あまね部の様子が....")
-
+},1000*60*1)
+//二個目
+setTimeout(() => {
     setTimeout(()=>{
     document.getElementById("title").textContent = "あまねき"
     let flag=false
@@ -36,5 +38,5 @@ setTimeout(()=>{
 },1000*60*1)
 
 
-},1000*60*1)
+}, 1000*60*2);
 })
