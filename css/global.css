@@ -23,6 +23,17 @@
 
 
 
+
+.fade {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s, transform 2s;
+}
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 body {
     margin: 0;
     padding: 0;

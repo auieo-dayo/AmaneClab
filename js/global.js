@@ -1,3 +1,14 @@
+const sleepAndExecute = (callback, sec) => {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      callback(); // 指定された関数を実行
+      resolve(); // Promiseを解決
+    }, sec * 1000);
+  });
+};
+
+
+
 const color = [["red","green","blue","yellow"],0]
 addEventListener("DOMContentLoaded",(event)=>{
 setInterval(()=>{
@@ -8,5 +19,22 @@ color[1]++
 setTimeout(()=>{
     document.getElementById("title").textContent = "あまネギ"
     alert("おや？あまね部の様子が....")
+
+    setTimeout(()=>{
+    document.getElementById("title").textContent = "あまねき"
+    let flag=false
+    setInterval(()=>{
+      if (flag) {
+        document.getElementById("title").style.scale = 1.2
+        flag = false
+      } else {
+        document.getElementById("title").style.scale = 1
+        flag = true
+      }
+    },500)
+    alert("おや？またあまね部の様子が....")
+},1000*60*1)
+
+
 },1000*60*1)
 })
