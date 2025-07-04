@@ -16,13 +16,15 @@ if (color[0].length < color[1]) color[1]=0;
 document.getElementById("title").style.color = color[0][color[1]]
 color[1]++
 },350)
+
+
 setTimeout(()=>{
     document.getElementById("title").textContent = "あまネギ"
     alert("おや？あまね部の様子が....")
 },1000*60*1)
+
 //二個目
 setTimeout(() => {
-    setTimeout(()=>{
     document.getElementById("title").textContent = "あまねき"
     let flag=false
     setInterval(()=>{
@@ -35,8 +37,17 @@ setTimeout(() => {
       }
     },500)
     alert("おや？またあまね部の様子が....")
-},1000*60*1)
 
 
 }, 1000*60*2);
+setTimeout(()=>{
+  const a = ["あ","あま","あまさ","あまさん"]
+  let index=0
+  setInterval(()=>{
+    document.getElementById("title").textContent = a[index]
+    index++
+    if (index == a.length) index = 0
+  },500)
+  
+},1000*60*3)
 })
