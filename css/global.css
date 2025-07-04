@@ -115,7 +115,7 @@ h3 {
     font-size: 1.7rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 #menu {
     left: 0px;
     display: block;

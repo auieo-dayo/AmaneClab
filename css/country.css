@@ -1,0 +1,46 @@
+#country_list {
+    width: 90vw;
+    margin: auto;
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.country {
+    margin-left: 10px;
+    border: 1px solid #000;
+    width: max-content;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.country_name {
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+    font-size: 35px;
+    transition: .3s;
+}
+.country_name:hover {
+    color: lightgreen;
+    -webkit-text-stroke: 0.5px #000;
+}
+.country_king_name { 
+    transition: .3s;
+    font-size: 30px;
+}
+.country_king_name:hover {
+    color: lightblue;
+    -webkit-text-stroke: 0.5px #000;
+
+}
+@media (max-width: 768px) {
+.country_list {
+    display: block;
+}
+.country {
+    margin-bottom: 10px;
+}
+}
